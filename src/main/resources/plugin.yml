@@ -1,0 +1,40 @@
+name: ${name}
+description: ${description}
+author: ${author}
+main: ${mainClass}
+version: ${version}
+url: ${url}
+softdepend: ["PlaceholderAPI"]
+api-version: 1.13
+commands:
+  back:
+    description: "Back to your previous location before last teleport."
+  delhome:
+    description: "Delete a home."
+  delwarp:
+    description: "Delete a warp."
+  home:
+    description: "Teleport to a home."
+  portal:
+    description: "Create, edit or delete portals."
+  sethome:
+    description: "Create a new home."
+  setwarp:
+    description: "Create a new warp"
+  setspawn:
+    description: "Set the server spawn."
+  spawn:
+    description: "Go to the spawn."
+  top:
+    description: "Teleport to the block at the top of your current position."
+  tpaccept:
+    description: "Accept a pending teleport request to you."
+  tpa:
+    aliases: ["tpask"]
+    description: "Send teleport request to another player."
+  tpahere:
+    description: "Request another player to teleport to your current location."
+  warp:
+    description: "Teleport or open the warp menu."
+  world:
+    description: "Teleport to a specific world."

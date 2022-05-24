@@ -1,0 +1,156 @@
+# Common messages
+common:
+  no-permission: "&cNo permissions for run this command."
+  no-by-console: "&cThis command cannot be executed in the console."
+  no-by-player: "&cThis command cannot be executed by a player."
+  offline-player: "&cThis player is offline."
+  # arg-must-be-boolean: "&cThe argument {arg} must be true or false."
+  # arg-must-be-number: "&c{arg} is not valid number."
+  cancelled-due-movement: "&cYour teleport has been cancelled due to movement."
+  accept: "&8[&aAccept&8]"
+
+# Module messages
+join:
+  message: "&8[&2+&8] &a%player_name% &7has joined."
+
+quit:
+  message: "&8[&4+&8] &c%player_name% &7has leaved."
+
+# Command messages
+back:
+  no-previous-location: "&cNo previous location to back."
+  teleporting: "&aTeleporting to your previous location in {time}s, don't move."
+  teleported: "&aYou had been teleported to your previous location."
+
+delhome:
+  usage: "&cUsage: &7/delhome <name>"
+  not-found: "&cHome with name {home} doesn't exist."
+  deleted: "&aYou home {home} has been deleted."
+
+delwarp:
+  usage: "&cUsage: &7/delwarp <name>"
+  warp-not-exist: "&aThe warp {warp} doesn't exist."
+  deleted: "&aYou has been deleted the warp {warp}"
+
+home:
+  usage: "&cUsage: &7/home <name>"
+  not-found: "&cHome with name {home} doesn't exist."
+  not-set: "&cYou don't have any home. Use /sethome <name> to create one at your current location."
+  list: "&bList of your homes: &7{homes}"
+  teleporting: "&aSending you to home {home} in {time}s, don't move."
+  teleported: "&aYou had been teleported to your home {home}"
+
+portal:
+  help: |-
+    &7
+    &a/portal create <name> &8- &7Create a new portal.
+    &a/portal wand &8- &7Give you a position wand.
+    &a/portal permission <portal> <permission> &8- &7Set portal permission.
+    &a/portal price <portal> <price> &8- &7Set a price to the portal.
+    &a/portal addcmd <portal> <command> &8- &7Add a command to the portal.
+    &a/portal addsound <portal> <sound> &8- &7Add a sound to the portal.
+    &a/portal addtell <portal> <text> &8- &7Add a message to the portal.
+    &7
+  addcmd:
+    usage: "&cUsage: &7/portal addcmd <portal> <command>"
+    added: "&aYou has been added the command {command} to the portal {portal}"
+  addserver:
+    usage: "&cUsage: &7/portal addserver <portal> <server>"
+    added: "&aYou has been added the server {server} to the portal {portal}"
+  addsound:
+    usage: "&cUsage: &7/portal addsound <portal> <sound>"
+    sound-not-found: "&cSound with name {sound} doesn't exist."
+    added: "&aYou has been added the sound {sound} to the portal {portal}"
+  addtell:
+    usage: "&cUsage: &7/portal addtell <portal> <message>"
+    added: "&aYou has been added the message {message} &ato the portal {portal}"
+  create:
+    usage: "&cUsage: &7/portal create <name>"
+    already-exist: "&cPortal {portal} already exist."
+    no-wand: "&cYou don't have a location wand. Use /portal wand to get one"
+    no-wand-complete: "&cYou need to set portal region first using the wand in your hand."
+    created: "&aYou has been created the portal {portal}"
+  permission:
+    usage: "&cUsage: &7/portal permission <portal> <permission>"
+    setted: "&aYou has been set the permission to {permission} for the portal {portal}"
+  price:
+    usage: "&cUsage: &7/portal price <portal> <price>"
+    setted: "&aYou has been set the price to {price} for the portal {portal}"
+  wand:
+    given: "&aHere your position wand. Use left/right click in a block to set the portal region."
+  not-exist: "&cPortal with name {portal} doesn't exist."
+  no-permission: "&cNo permission to use this portal."
+  no-balance: "&cNo enough balance to use this portal."
+
+sethome:
+  usage: "&cUsage: &7/sethome <name>"
+  already-exist: "&cHome {home} already exist. You can delete it with /delhome {home}"
+  success: "&aYou had created home {home} at your current location."
+
+setspawn:
+  success: "&aYou has been set the spawn at your current location."
+
+setwarp:
+  usage: "&cUsage: &e/setwarp <name>"
+  created: "&aYou has created the warp {warp} at your current location."
+  modified: "&aYou has modified the location of existent warp {warp}."
+
+spawn:
+  teleporting: "&aTeleporting to spawn in {time}s, don't move"
+  teleported: "&aYou had been teleported to the spawn"
+
+tpaccept:
+  usage: "&cUsage: &e/tpaccept <player>"
+  already-accepted: "&cYou has already accepted this teleport request."
+  not-pending: "&cYou don't have a teleport request from this player or it has been expired."
+  accepted: "&aYou has accepted teleport request from {player}"
+  accepted-notify: "&a{player} has accepted your teleport request."
+  teleporting: "&aTeleporting you to {player} in {time}s, don't move."
+  teleported: "&aYou had been teleported to the player {player}"
+  
+tpa:
+  usage: "&cUsage: &e/tpa <player>"
+  already-sent: "&cThis player has already a pending teleport request from you."
+  sent: "&aYou has sent a teleport request to {player}."
+  request: |-
+    &r 
+    &b{sender} &7want to teleport to you.
+    &7Do you wanna accept? {accept}
+    &r
+
+tpahere:
+  usage: "&cUsage: &e/tpahere <player>"
+  sent: "&aYou has sent a teleport here request to {player}."
+  request: |-
+    &r 
+    &b{sender} &7want you teleport to their location.
+    &7Do you wanna accept? {accept}
+    &r
+
+top:
+  no-block-above: "&cThere is no block above you."
+  teleported: "&aYou has been teleported to the block at the op."
+
+warp:
+  usage: "&cUsage: &e/warp <warp> [player]"
+  no-permission: "&cYou don't have permission to use this warp."
+  warp-not-found: "&cWarp {warp} doesn't exist."
+  teleporting: "&aSending you to the warp {warp} in {time}s, don't move."
+  teleporting-other: "&aSending {target} to warp {warp}."
+  teleported: "&aYou had been teleported to the warp {warp}"
+
+world:
+  usage: "&cUsage: &e/world <world>"
+  world-not-found: "&cWorld {world} doesn't exist."
+  teleported: "&aYou has been teleported to the world {world}"
+
+# Misc and others messages
+misc:
+  wand-name: "&6&lWand &7(Left/right click)"
+  wand-lore: |-
+    &7 
+    &aLeft Click: &7Set first position
+    &aRight Click: &7Set second position
+    &7 
+  wand-first-position: "&aYou has been set the first position."
+  wand-second-position: "&aYou has been set the second position."

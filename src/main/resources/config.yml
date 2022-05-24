@@ -1,0 +1,32 @@
+settings:
+  default-lang: "en"
+
+join:
+  # Require permission: spawnplus.join-message
+  # Start with i18n: to get from lang file and Auto-translate for all players.
+  message: "i18n:join.message"
+  # Require permission: spawnplus.join-sounds
+  sounds:
+    - "LEVELUP"
+  teleport-to-spawn: true
+
+quit:
+  # Require permission: spawnplus.leave-message
+  # Start with i18n: to get from lang file and Auto-translate for all players.
+  message: "i18n:quit.message"
+  teleport-to-spawn: true
+
+respawn:
+  bypass-bed: false
+  teleport-to-spawn: true
+
+spawn:
+  radius: 1
+
+teleport:
+  expiration: 30
+  # Delay is bypasseable with permission spawnplus.bypass-delay
+  delay: 1
+  delay-players-nearby: 10
+  nearby-radius: 64
+  sound: "ENDERMAN_TELEPORT"
